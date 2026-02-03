@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "betterrotten",
+  "version": "${version}",
+  "name": "BetterRotten",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/betterrotten/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "ru.thb.betterrotten.client.BetterRottenDataGenerator"
+    ],
+    "client": [
+      "ru.thb.betterrotten.client.BetterRottenClient"
+    ],
+    "main": [
+      "ru.thb.betterrotten.BetterRotten"
+    ]
+  },
+  "mixins": [
+    "betterrotten.mixins.json",
+    {
+      "config": "betterrotten.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
