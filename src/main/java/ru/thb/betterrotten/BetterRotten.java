@@ -1,12 +1,10 @@
 package ru.thb.betterrotten;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.RecipeManager;
 import ru.thb.betterrotten.item.BetterRottenItems;
 
 import static ru.thb.betterrotten.item.BetterRottenItems.LEATHER_SCRAP;
